@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 6.7%;
+    --foreground: 0 0% 91.8%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 91.8%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 91.8%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 0% 91.8%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 91.8%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 13%;
+    --sidebar-accent-foreground: 0 0% 91.8%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Custom tokens */
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 60%), hsl(230 80% 65%));
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom utility classes */
+@layer components {
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.3em] text-primary;
+    font-family: var(--font-body);
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-foreground;
+    font-family: var(--font-display);
+  }
+
+  .card-surface {
+    @apply bg-card border border-border rounded-lg;
+    box-shadow: var(--shadow-card);
+  }
+
+  .accent-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .nav-dot {
+    @apply w-2.5 h-2.5 rounded-full border border-muted-foreground/40 transition-all duration-300 cursor-pointer;
+  }
+
+  .nav-dot-active {
+    @apply bg-primary border-primary scale-125;
+    box-shadow: 0 0 12px hsl(217 91% 60% / 0.5);
+  }
+
+  .skill-tag {
+    @apply px-3 py-1.5 text-xs font-medium rounded-md bg-secondary text-foreground/80 border border-border;
+  }
+
+  .project-card {
+    @apply card-surface p-6 transition-all duration-500 cursor-pointer;
+  }
+
+  .project-card:hover {
+    @apply border-primary/50;
+    box-shadow: 0 0 40px hsl(217 91% 60% / 0.1);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 6.7%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 20%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(217 91% 60%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
