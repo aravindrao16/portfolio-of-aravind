@@ -13,7 +13,7 @@ const experiences = [
       "Implemented microservices architecture for scalability",
       "Coordinated cross-team collaboration with business and infrastructure teams",
     ],
-    tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "AWS"],
+    tech: ["React", "JavaScript", "TypeScript", "Node.js", "Express", "PostgreSQL", "AWS"],
   },
   {
     company: "Florida Blue (BCBSFL)",
@@ -26,7 +26,7 @@ const experiences = [
       "Developed React Native mobile apps with accessibility compliance",
       "Integrated BloomReach CMS for content management",
     ],
-    tech: ["React", "Next.js", "Node.js", "React Native", "Redux", "MongoDB"],
+    tech: ["React", "JavaScript", "Next.js", "Node.js", "React Native", "Redux", "MongoDB"],
   },
   {
     company: "Lithia Motors",
@@ -65,7 +65,7 @@ const experiences = [
       "Implemented JWT authentication and authorization",
       "Used MongoDB for database persistence",
     ],
-    tech: ["React", "Next.js", "Node.js", "MongoDB", "Azure", "PowerShell"],
+    tech: ["React", "JavaScript", "Node.js", "MSSQL", "Azure", "PowerShell"],
   },
   {
     company: "ICON Analytical Equipments",

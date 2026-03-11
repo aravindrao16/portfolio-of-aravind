@@ -45,13 +45,13 @@ const AboutSection = () => {
         >
           <p>
             I'm a Full Stack Developer with <strong className="text-foreground">11+ years of industry experience</strong> specializing 
-            in modern tech stacks including React, TypeScript, Node.js, and cloud platforms like AWS and Azure. 
+            in modern tech stacks including React, JavaScript, TypeScript, Node.js, and cloud platforms like AWS and Azure. 
             My work centers on creating scalable, high-performance web applications backed by robust backend services.
           </p>
           <p>
             At <strong className="text-foreground">CIGNA Group</strong>, I lead a team of developers as a Tech Lead, 
             driving full-stack development for enterprise healthcare applications. Previously at <strong className="text-foreground">Florida Blue</strong>, 
-            I architected customer identity and access management solutions serving millions of users.
+            I led the customer identity and access management(user's login) solutions with enhanced security features and serving millions of users.
           </p>
           <p>
             I hold a <strong className="text-foreground">Master's in Computer Science</strong> from the University of Central Missouri 
