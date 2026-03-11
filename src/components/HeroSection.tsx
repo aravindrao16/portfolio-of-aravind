@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.35 }}
               className="text-base md:text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed"
             >
-              11+ years building high-performance web applications with React, Node.js, TypeScript, and cloud platforms — focused on clean architecture, great UX, and scalable systems.
+              11+ years building high-performance web applications with React, Node.js, JavaScript, TypeScript, and cloud platforms — focused on clean architecture, great UX, and scalable systems.
             </motion.p>
 
             {/* CTAs */}
