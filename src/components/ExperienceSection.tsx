@@ -48,7 +48,7 @@ const experiences = [
     description: "Built Executive Dashboard for collections reporting with interactive charts and drill-down maps, ABNPT for provider termination analysis, and an Automation Tool to minimize IT interaction for report deployment.",
     highlights: [
       "Created sophisticated charts and maps using recharts and nivo",
-      "Built AWS Lambda serverless APIs for vehicle data retrieval",
+      "Built AWS Lambda serverless APIs for batch job script file execution",
       "Developed automation tools reducing manual deployment processes",
       "Used MERN stack for full-stack application development",
     ],
