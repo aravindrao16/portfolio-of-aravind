@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github, ChevronDown } from "lucide-react";
 import profileImg from "@/assets/profile.jpeg";
 
 const stats = [
-  { value: "11+", label: "Years in Tech" },
+  { value: "12+", label: "Years in Tech" },
   { value: "6+", label: "Companies" },
   { value: "15+", label: "Projects Delivered" },
   { value: "MS", label: "Computer Science" },
@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.35 }}
               className="text-base md:text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed"
             >
-              11+ years building high-performance web applications with React, Node.js, JavaScript, TypeScript, and cloud platforms — focused on clean architecture, great UX, and scalable systems.
+              12+ years building high-performance web applications with React, Node.js, JavaScript, TypeScript, and cloud platforms — focused on clean architecture, great UX, and scalable systems.
             </motion.p>
 
             {/* CTAs */}

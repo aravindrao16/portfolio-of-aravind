@@ -44,7 +44,7 @@ const AboutSection = () => {
           className="space-y-5 text-muted-foreground leading-relaxed mb-12"
         >
           <p>
-            I'm a Full Stack Developer with <strong className="text-foreground">11+ years of industry experience</strong> specializing 
+            I'm a Full Stack Developer with <strong className="text-foreground">12+ years of industry experience</strong> specializing 
             in modern tech stacks including React, JavaScript, TypeScript, Node.js, and cloud platforms like AWS and Azure. 
             My work centers on creating scalable, high-performance web applications backed by robust backend services.
           </p>

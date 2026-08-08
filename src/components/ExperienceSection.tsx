@@ -21,7 +21,7 @@ const experiences = [
     period: "April 2023 — October 2024",
     description: "Architected customer identity and access management systems including login, registration, and forgot password flows with enhanced security features like ID proofing and MFA.",
     highlights: [
-      "Led team of 5 developers coordinating with security and infrastructure teams",
+      "Led team of 15 developers coordinating with security and infrastructure teams",
       "Built role-based login flows for Members, Providers, Agents, and Admins",
       "Developed React Native mobile apps with accessibility compliance",
       "Integrated BloomReach CMS for content management",

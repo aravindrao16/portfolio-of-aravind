@@ -6,13 +6,15 @@ import {
   Database, HardDrive, Snowflake, ServerCog, CircleDot, MemoryStick, Layers, BarChart3,
   GitBranch, Github, GitMerge, Rocket, Settings2, ClipboardList, Figma, PenTool, Send, Timer,
   Globe2, FileText, Search, Activity, BarChart, PieChart, TrendingUp,
-  RefreshCcw, Target, FlaskConical, Building2, Microscope, Users, Kanban, Network, AppWindow
+  RefreshCcw, Target, FlaskConical, Building2, Microscope, Users, Kanban, Network, AppWindow,
+  Award
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 interface SkillItem {
   name: string;
   icon: LucideIcon;
+  href?: string;
 }
 
 interface SkillCategory {
@@ -104,6 +106,20 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    title: "Certifications",
+    icon: Award,
+    skills: [
+      { name: "AI Fluency: Framework & Foundations", icon: Award, href: "https://verify.skilljar.com/c/mjmrof7gpqyy" },
+      { name: "Building with the Claude API", icon: Award, href: "https://verify.skilljar.com/c/3mbg55cqryf6" },
+      { name: "Claude 101", icon: Award, href: "https://verify.skilljar.com/c/djx3sof3wn7f" },
+      { name: "Claude Code 101", icon: Award, href: "https://verify.skilljar.com/c/cfscowkmq6mi" },
+      { name: "Claude Code in Action", icon: Award, href: "https://verify.skilljar.com/c/jv3u3ng7tspj" },
+      { name: "Claude on Google Cloud", icon: Award, href: "https://verify.skilljar.com/c/f2a9nyq3egrw" },
+      { name: "Claude Platform 101", icon: Award, href: "https://verify.skilljar.com/c/ji2pnq9dqqn4" },
+      { name: "Claude with Amazon Bedrock", icon: Award, href: "https://verify.skilljar.com/c/wag8m5y42btr" },
+    ],
+  },
+  {
     title: "Methodologies",
     icon: Target,
     skills: [
@@ -116,7 +132,7 @@ const skillCategories: SkillCategory[] = [
       { name: "MVC", icon: AppWindow },
       { name: "SPA", icon: Monitor },
     ],
-  },
+  }
 ];
 
 const SkillsSection = () => {
@@ -168,15 +184,37 @@ const SkillsSection = () => {
                 <h3 className="font-display font-bold text-foreground">{category.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill) => (
-                  <span
-                    key={skill.name}
-                    className="skill-tag text-[11px] inline-flex items-center gap-1.5"
-                  >
-                    <skill.icon size={12} className="text-primary/70" />
-                    {skill.name}
-                  </span>
-                ))}
+                {category.skills.map((skill) => {
+                  const content = (
+                    <>
+                      <skill.icon size={12} className="text-primary/70" />
+                      {skill.name}
+                    </>
+                  );
+
+                  if (skill.href) {
+                    return (
+                      <a
+                        key={skill.name}
+                        href={skill.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="skill-tag text-[11px] inline-flex items-center gap-1.5 hover:border-primary/50 transition-colors"
+                      >
+                        {content}
+                      </a>
+                    );
+                  }
+
+                  return (
+                    <span
+                      key={skill.name}
+                      className="skill-tag text-[11px] inline-flex items-center gap-1.5"
+                    >
+                      {content}
+                    </span>
+                  );
+                })}
               </div>
             </motion.div>
           ))}
